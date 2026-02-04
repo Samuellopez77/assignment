@@ -39,4 +39,17 @@ public class GradeManager {
                 System.out.println("Invalid Grade");
         }
     }
+    public static double calculateClassAverage(double score1, double score2) {
+        return (score1 + score2) / 2.0;
+    }
+    public static double calculateClassAverage(double score1, double score2, double score3) {
+        return (score1 + score2 + score3) / 3.0;
+    }
+    public static double calculateClassAverage(double[] scores) {
+        double sum = 0;
+        for (double x : scores) {
+            sum += x;
+        }
+        return sum / scores.length;
+    }
 }
